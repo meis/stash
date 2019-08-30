@@ -44,18 +44,18 @@ body {
 }
 
 .main {
-  display: flex;
   background: $mainBackground;
   min-height: 100%;
-  position: relative;
 }
 
 .main-header {
   border: 1px solid red;
   width: 35%;
   background: $secondaryBackground;
-  height: 20em;
   color: white;
+  position: fixed;
+  top: 0;
+  bottom: 50%;
   text-align: center;
       justify-content: flex-end;
     flex-direction: column;
@@ -64,7 +64,7 @@ body {
 
 .main-content {
   border: 1px solid blue;
-  width: 65%;
+  margin-left: 35%;
   max-width: 1024px;
   padding: 1rem;
 }
@@ -72,8 +72,8 @@ body {
 .main-footer {
   background-color: black;
   border: 1px solid green;
-  position: absolute;
-  top: 20em;
+  position: fixed;
+  top: 50%;
   bottom: 0;
   width: 35%;
   background: $secondaryBackground;
