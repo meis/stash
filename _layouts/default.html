@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-header">
+        <img id="avatar" src="{{ "/assets/avatar.jpg" }}"/>
+        <h1>meis.dev</h1>
+      </div>
+      <div class="main-content">
+        {{ content}}
+      </div>
+      <div class="main-footer">
+        <ul>
+        <li><a class="fa fa-2x fa-github" href="https://github.com/meis"><span class="description">GitHub</span></a></li>
+        <li><a class="fa fa-2x fa-twitter" href="https://twitter.com/m_e_i_s"><span class="description">Twitter</span></a></li>
+        <li><a class="fa fa-2x fa-linkedin" href="https://linkedin.com/in/meis"><span class="description">LinkedIn</span></a></li>
+        <li><a class="fa fa-2x fa-envelope" href="mailto:marc.egea.sala@gmail.com"><span class="description">Email</span></a></li>
+      </ul>
+      </div>
+    </div>
+  </body>
+</html>
